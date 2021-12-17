@@ -641,12 +641,12 @@ end
 function Getrtba(UserID,ChatID)
 if UserID == our_id then 
 var = 'هذا البوت! ' 
-elseif UserID == 1088394097 or UserID == 1088394097  then 
-var = '*( الهكر ايمن )*'
-elseif UserID == 1480243587 or UserID == 1480243587  then 
-var = '*( Mamy )*'
-elseif UserID == 39809485 or UserID == 39809485  then 
-var = '*( دحدوحه )*'
+elseif UserID == 5030591086 or UserID == 5030591086  then 
+var = '*( Mastr )*'
+elseif UserID == 5030591086 or UserID == 5030591086  then 
+var = '*( Mastr )*'
+elseif UserID == 5030591086 or UserID == 5030591086  then 
+var = '*( Mastr )*'
 elseif  UserID == SUDO_ID then
 var = redis:get(boss..":RtbaNew1:"..ChatID) or '*( Master )*' 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then
@@ -894,7 +894,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. ' ➣ ['..info.username..'] ࿓ ( `' ..v.. '` ) \n'
 else
-message = message ..k.. ' ➣ ['..info.username..'](t.me/Y_8Bot) ࿓  ( `' ..v.. '` ) \n'
+message = message ..k.. ' ➣ ['..info.username..'](t.me/TI6BOT) ࿓  ( `' ..v.. '` ) \n'
 end
 end
 if utf8.len(message) > 4096 then
@@ -915,7 +915,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. ' ➣ ['..info.username..'] ࿓ ( `' ..v.. '` ) \n'
 else
-message = message ..k.. ' ➣ ['..info.username..'](t.me/Y_8Bot) ࿓  ( `' ..v.. '` ) \n'
+message = message ..k.. ' ➣ ['..info.username..'](t.me/TI6BOT) ࿓  ( `' ..v.. '` ) \n'
 end
 end
 if utf8.len(message) > 4096 then
@@ -945,7 +945,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. ' ➣ ['..info.username..'] ࿓ ( `' ..v.. '` ) \n'
 else
-message = message ..k.. ' ➣ ['..info.username..'](t.me/Y_8Bot) ࿓  ( `' ..v.. '` ) \n'
+message = message ..k.. ' ➣ ['..info.username..'](t.me/TI6BOT) ࿓  ( `' ..v.. '` ) \n'
 end
 end
 if utf8.len(message) > 4096 then
@@ -976,7 +976,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. ' ➣ ['..info.username..'] ࿓ ( `' ..v.. '` ) \n'
 else
-message = message ..k.. ' ➣ ['..info.username..'](t.me/Y_8Bot) ࿓  ( `' ..v.. '` ) \n'
+message = message ..k.. ' ➣ ['..info.username..'](t.me/TI6BOT) ࿓  ( `' ..v.. '` ) \n'
 end 
 end 
 if utf8.len(message) > 4096 then
@@ -1006,7 +1006,7 @@ local info = redis:hgetall(boss..'username:'..v)
 if info and info.username and info.username:match("@[%a%d_]+") then
 message = message ..k.. ' ➣ ['..info.username..'] ࿓ ( `' ..v.. '` ) \n'
 else
-message = message ..k.. ' ➣ ['..info.username..'](t.me/Y_8Bot) ࿓  ( `' ..v.. '` ) \n'
+message = message ..k.. ' ➣ ['..info.username..'](t.me/TI6BOT) ࿓  ( `' ..v.. '` ) \n'
 end
 end 
 if utf8.len(message) > 4096 then
@@ -1273,7 +1273,7 @@ end
 if NumAdmin == 0 then 
 return sendMsg(arg.chat_id_,arg.id_,"• مافيه ادمنيه عشان ارفعهم \n")
 else
-return sendMsg(arg.chat_id_,arg.id_,"• تم رفعت  ( *"..NumAdmin.."* ) مـن الادمنيه‌‏ في البوت \n ")
+return sendMsg(arg.chat_id_,arg.id_,"• ابشر رفعت  ( *"..NumAdmin.."* ) مـن الادمنيه‌‏ في البوت \n ")
 end
 end,30,{chat_id_=msg.chat_id_,id_=msg.id_})
 end
@@ -1328,7 +1328,7 @@ if data.channel_ and data.channel_.status_.ID  == "ChatMemberStatusMember" then
 return sendMsg(arg.chat_id_,arg.id_,'*•* انا مو ادمن في المجموعة \n*•* ارفعني ادمن عشان تقدر تفعلني \n ')
 end
 if arg.lock_servicez then 
-sendMsg(arg.chat_id_,arg.id_,'• من「 '..NameUser..'」فعلت المجموعة \n• ورفعت كل الادمن \nاضغط هنا [/Commands](https://t.me/Y_8Bot?start=commands) \n')
+sendMsg(arg.chat_id_,arg.id_,'- من「 '..NameUser..'」ابشر فعلت \n- ورفعت كل الادمن \n -ارسل [/Commands](https://t.me/TI6BOT?start=commands) \n')
 redis:set(boss.."idphoto"..arg.chat_id_,true)
 redis:set(boss..":yt:"..arg.chat_id_,'on')
 redis:set(boss..":sound:"..arg.chat_id_,'on')
@@ -1336,7 +1336,7 @@ redis:set(boss..":tts:"..arg.chat_id_,'on')
 redis:set(boss..':bio:'..msg.chat_id_,"yes")
 redis:set(boss..":trans:"..arg.chat_id_,'on')
 else
-sendMsg(arg.chat_id_,arg.id_,'• من「 '..NameUser..'」 \n ابشر فعلت المجموعة\nاضغط هنا [/Commands](https://t.me/Y_8Bot?start=commands) \n ')
+sendMsg(arg.chat_id_,arg.id_,'- من「 '..NameUser..'」 \n ابشر فعلت المجموعة\n -ارسل  [/Commands](https://t.me/TI6BOT?start=commands) \n ')
 redis:set(boss.."idphoto"..arg.chat_id_,true)
 redis:set(boss..":yt:"..arg.chat_id_,'on')
 redis:set(boss..":sound:"..arg.chat_id_,'on')
@@ -2167,8 +2167,8 @@ if UserID == our_id then
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد البوت! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد المطور الاساسي!\n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد الهكر ايمن!\n") 
+elseif UserID == 5030591086 or UserID == 5030591086 then 
+return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد Mastr!\n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد المطور!\n") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..ChatID,UserID) then 
@@ -2304,8 +2304,8 @@ end
 if cmd == "ban" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تحظر البوت! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(ChatID,MsgID,"️*•* هييه مايمديك تحظر الهكر ايمن! \n") 
+elseif UserID == 5030591086 or UserID == 5030591086 then 
+return sendMsg(ChatID,MsgID,"️*•* هييه مايمديك تحظر Mastr! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تحظر المطور الاساسي ياورع! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2333,8 +2333,8 @@ end
 if cmd == "kick" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد البوت! \n ") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد الهكر ايمن!\n ") 
+elseif UserID == 5030591086 or UserID == 5030591086 then 
+return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد Mastr!\n ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تطرد المطور الاساسي ياورع! \n ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2376,8 +2376,8 @@ end
 if cmd == "ktm" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تكتم البوت! \n ") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(ChatID,MsgID,"️*•* هييه مايمديك تكتم الهكر ايمن! \n ") 
+elseif UserID == 5030591086 or UserID == 5030591086 then 
+return sendMsg(ChatID,MsgID,"️*•* هييه مايمديك تكتم Mastr! \n ") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"*•* هييه مايمديك تكتم المطور الاساسي ياورع! \n ") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2435,8 +2435,8 @@ end
 if cmd == "bandall" then
 if UserID == our_id then   
 return sendMsg(ChatID,MsgID,"*•* مايمديك تحظر البوت\n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(ChatID,MsgID,"*•* مايمديك تحظر الهكر ايمن\n") 
+elseif UserID == 5030591086 or UserID == 5030591086 then 
+return sendMsg(ChatID,MsgID,"*•* مايمديك تحظر Mastr\n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(ChatID,MsgID,"*•* مايمديك تحظر المطور الاساسي\n")
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2482,7 +2482,7 @@ end
 if cmd == "DwnAll" then ----------- تنزيل الكل
 print(UserID..":"..SUDO_ID)
 if UserID == our_id then return sendMsg(ChatID,MsgID,"*•* مايمديك تسوي الامر مع البوت\n") end
-if UserID == 1088394097 or UserID == 1088394097 then return sendMsg(ChatID,MsgID,"*•* مايمديك تنزل الهكر ايمن  \n") end
+if UserID == 5030591086 or UserID == 5030591086 then return sendMsg(ChatID,MsgID,"*•* مايمديك تنزل Mastr  \n") end
 
 if UserID == SUDO_ID then 
 rinkuser = 1
