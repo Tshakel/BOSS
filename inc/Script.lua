@@ -5,7 +5,7 @@ if msg.forward_info_ then return false end
 
 if MsgText[1] == "/start commands" and msg.type == "pv" then
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
-text = [[*• هلا فيك في اوامر البوت
+text = [[*- هلا فيك في اوامر البوت
  
  للاستفسار -* []]..SUDO_USER..[[]
 
@@ -34,7 +34,7 @@ msg = arg.msg
 local NameUser   = Hyper_Link_Name(data)
 if not redis:get(boss..'group:add'..msg.chat_id_) then return sendMsg(msg.chat_id_,msg.id_,'• المجموعه معطله من قبل يالطيب! ') end  
 rem_data_group(msg.chat_id_)
-sendMsg(msg.chat_id_,msg.id_,'• من「 '..NameUser..' 」 \n• ابشر تم التعطيل \n')
+sendMsg(msg.chat_id_,msg.id_,'• من「 '..NameUser..' 」 \n• ابشر عطلت \n')
 end,{msg=msg})
 end
 
@@ -1960,8 +1960,8 @@ if not data.sender_user_id_ then return sendMsg(arg.ChatID,arg.MsgID,"*•* مع
 local UserID = data.sender_user_id_
 if UserID == our_id then  
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد البوت!  \n") 
-elseif UserID == 1088394097 or UserID == 1088394097  then  
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد الهكر ايمن!\n") 
+elseif UserID == 1099083018 or UserID == 1099083018  then  
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد Mastr!\n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هيييه مايمديك تقييد المطور الاساسي ياورع!\n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2001,8 +2001,8 @@ local UserID = data.id_
 NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد البوت!\n") 
-elseif  UserID == 1088394097 or UserID == 1088394097  then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد الهكر ايمن!\n") 
+elseif  UserID == 1099083018 or UserID == 1099083018  then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد Mastr!\n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تقييد المطور الاساسي ياورع!\n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2038,8 +2038,8 @@ elseif MsgText[2] and MsgText[2]:match('^%d+$') then  -- By UserID
 UserID =  MsgText[2] 
 if UserID == our_id then   
 return sendMsg(msg.chat_id_,msg.id_,"*•* هييه مايمديك تقييد البوت!\n") 
-elseif UserID == "1088394097" or UserID == "1088394097" then 
-return sendMsg(msg.chat_id_,msg.id_,"*•* هييه مايمديك تقييد الهكر ايمن! \n") 
+elseif UserID == "1099083018" or UserID == "1099083018" then 
+return sendMsg(msg.chat_id_,msg.id_,"*•* هييه مايمديك تقييد Mastr! \n") 
 elseif UserID == tostring(SUDO_ID) then 
 return sendMsg(msg.chat_id_,msg.id_,"*•* هييه مايمديك تقييد المطور الاساسي ياورع!\n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2582,8 +2582,8 @@ if not data.sender_user_id_ then return sendMsg(arg.ChatID,arg.MsgID,"*•* هذ
 local UserID = data.sender_user_id_
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد البوت! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد الهكر ايمن! \n") 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد Mastr! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد المطور الاساسي ياورع! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2621,8 +2621,8 @@ UserName = arg.UserName
 NameUser = Hyper_Link_Name(data)
 if UserID == our_id then   
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد البوت! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد الهكر ايمن! \n") 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد Mastr! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تطرد المطور الاساسي ياورع! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
@@ -2668,7 +2668,7 @@ if UserID == our_id then
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر البوت! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر المطور الاساسي ياورع! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر الهكر ايمن! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر المطور! \n") 
@@ -2717,8 +2717,8 @@ if UserID == our_id then
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر البوت! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر المطور الاساسي ياورع! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر الهكر ايمن! \n") 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر Mastr! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تحظر المطور! \n") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -2773,7 +2773,7 @@ if data.type_.ID == "ChannelChatInfo" then return sendMsg(arg.ChatID,arg.MsgID,"
 redis:hset(boss..'username:'..arg.UserID,'username',USERNAME)
 redis:setex(boss..":uploadingsomeon:"..msg.chat_id_..msg.sender_user_id_,500,NameUser)
 redis:setex(boss..":uploadingsomeon2:"..msg.chat_id_..msg.sender_user_id_,500,arg.UserID)
-sendMsg(arg.ChatID,arg.MsgID,"• تمام الحين ارسل صلاحيات المشرف \n\n1 ⇠ صلاحيه تغيير المعلومات\n2 ⇠ صلاحيه حذف الرسائل\n3 ⇠ صلاحيه دعوه مستخدمين\n4 ⇠ صلاحيه حظر وتقيد المستخدمين \n5 ⇠ صلاحيه تثبيت الرسائل \n6 • صلاحيه رفع مشرفين اخرين\n\n[*] ⇠ لرفع كل الصلاحيات ما عدا رفع المشرفين \n[**] ⇠ لرفع كل الصلاحيات مع رفع المشرفين \n\n• يمديك تختار الارقام مع بعض وتعيين لقب للمشرف في سطر واحد  \n\nمثال: 136 الهطف \n ") 
+sendMsg(arg.ChatID,arg.MsgID,"• تمام الحين ارسل صلاحيات المشرف \n\n1 ⇠ صلاحيه تغيير المعلومات\n2 ⇠ صلاحيه حذف الرسائل\n3 ⇠ صلاحيه دعوه مستخدمين\n4 ⇠ صلاحيه حظر وتقيد المستخدمين \n5 ⇠ صلاحيه تثبيت الرسائل \n6 • صلاحيه رفع مشرفين اخرين\n\n[*] ⇠ لرفع كل الصلاحيات ما عدا رفع المشرفين \n[**] ⇠ لرفع كل الصلاحيات مع رفع المشرفين \n\n• يمديك تختار الارقام مع بعض وتعيين لقب للمشرف في سطر واحد  \n\nمثال: 136 عهد \n ") 
 
 end,{ChatID=arg.ChatID,UserID=UserID,MsgID=arg.MsgID})
 end,{ChatID=msg.chat_id_,MsgID=msg.id_})
@@ -2902,8 +2902,8 @@ if UserID == our_id then
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم البوت! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم المطور الاساسي ياورع! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم الهكر ايمن! \n") 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم Mastr! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم المطور! \n") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -2939,8 +2939,8 @@ if UserID == our_id then
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم البوت! \n") 
 elseif UserID == SUDO_ID then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم المطور الاساسي ياورع! \n") 
-elseif UserID == 1088394097 or UserID == 1088394097 then 
-return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم الهكر ايمن! \n") 
+elseif UserID == 1099083018 or UserID == 1099083018 then 
+return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم Mastr! \n") 
 elseif redis:sismember(boss..':SUDO_BOT:',UserID) then 
 return sendMsg(arg.ChatID,arg.MsgID,"*•* هييه مايمديك تكتم المطور! \n") 
 elseif redis:sismember(boss..':MONSHA_BOT:'..arg.ChatID,UserID) then 
@@ -4175,7 +4175,7 @@ local UserID = data.id_
 if UserID == our_id then return sendMsg(arg.ChatID,arg.MsgID,"*•* مايمديك تسوي الامر مع البوت\n") end
 
 msg = arg.msg
-if UserID == 1088394097 or UserID == 1088394097 then return sendMsg(msg.chat_id_,msg.id_,"*•* مايمديك تنزل الهكر ايمن \n") end
+if UserID == 1099083018 or UserID == 1099083018 then return sendMsg(msg.chat_id_,msg.id_,"*•* مايمديك تنزل Mastr \n") end
 NameUser = Hyper_Link_Name(data)
 
 if UserID == SUDO_ID then 
@@ -4836,7 +4836,7 @@ end
 
 
 if MsgText[1] == 'اصدار السورس' or MsgText[1] == 'الاصدار' then
-return '• اصدار سورس كاسبر : *v'..version..'* \n'
+return '• اصدار سورس عهد : *v'..version..'* \n'
 end
 
 if (MsgText[1] == 'تحديث السورس' or MsgText[1] == 'تحديث السورس ™') then
@@ -5205,10 +5205,10 @@ end
 
 
 
-if MsgText[1] == "الاوامر" or MsgText[1] == "/Commands" or MsgText[1] == "/Commands@Y_8Bot" then
+if MsgText[1] == "الاوامر" or MsgText[1] == "/Commands" or MsgText[1] == "/Commands@TI6BOT" then
 if not msg.Admin then return "• هذا الامر يخص ( الادمن,المدير,المالك,المطور ) بس  \n" end
 SUDO_USER = redis:hgetall(boss..'username:'..SUDO_ID).username
-text = [[*• هلا فيك في اوامر البوت
+text = [[*- هلا فيك في اوامر البوت
  
  للاستفسار -* []]..SUDO_USER..[[]
 
@@ -5471,7 +5471,7 @@ local text = [[
 
 ↞ رابط الاغنية
 
-「[𝘈 𝘞 𝘔 ](https://t.me/AAAAz)」 ]]
+「[Mastr ](https://t.me/Eiitk)」 ]]
 
 GetUserID(msg.sender_user_id_,function(arg,data)
 msg = arg.msg
@@ -5512,7 +5512,7 @@ local text = [[
 بعدها ترسل اسم الاغنية او الرابط
 
 
-「[𝘈 𝘞 𝘔 ](https://t.me/AAAAz)」 ]]
+「[Mastr ](https://t.me/Eiitk)」]]
 
 
 GetUserID(msg.sender_user_id_,function(arg,data)
@@ -5707,10 +5707,10 @@ end
 
 if MsgText[1] == "سورس" or MsgText[1]=="السورس" then
 return [[
-𒍭 𝙨𝙤𝙪𝙧𝙘𝙚 𝙬𝙖𝙖𝙙
+سورس عهد 
  
-[𓅓 𝙈𝘼𝙎𝙏𝙀𝙍](https://t.me/AAAAz)
-[𓅓𝘾𝙃𝘼𝙉𝙉𝙀𝙇](https://t.me/YYYYF)
+[𓅓 𝙈𝘼𝙎𝙏𝙀𝙍](https://t.me/Eiitk)
+[𓅓𝘾𝙃𝘼𝙉𝙉𝙀𝙇](https://t.me/eel00)
 
 ]]
 end
@@ -5917,9 +5917,9 @@ text = text:gsub("{البوت}",redis:get(boss..':NameBot:'))
 text = text:gsub("{المطور}",SUDO_USER)
 xsudouser = SUDO_USER:gsub('@','')
 xsudouser = xsudouser:gsub([[\_]],'_')
---local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/Y_8Bot?startgroup=start"}}}
+--local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/TI6BOT?startgroup=start"}}}
 --send_key(msg.sender_user_id_,(text),nil,inline,msg.id_)
-local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/Y_8Bot?startgroup=start"}},{{text="للاستفسارات",url="https://t.me/RRLRR"}}}
+local inline = {{{text="ضيفني لـ مجموعتك 🧚",url="https://telegram.me/TI6BOT?startgroup=start"}},{{text="للاستفسارات",url="https://t.me/Eiitk"}}}
 send_key(msg.sender_user_id_,(text),nil,inline,msg.id_)
 end,nil)
 return false
@@ -8653,7 +8653,7 @@ Boss = {
 "^(قائمة الخاروف)$",
 "^(/Commands)$",
 "^(/start commands)$",
-"^(/Commands@Y_8Bot)$",
+"^(/Commands@TI6BOT)$",
 
 },
 iBoss = iBoss,
