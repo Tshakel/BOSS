@@ -40,10 +40,10 @@ exit;
 fi
 
 
-if [ ! -f "./TG" ]; then
+if [ ! -f "./luatele.zip" ]; then
 echo -e "${RED}
 ¦
-¦ CAUTION:${WHITB} Your Not Dwonload TG .
+¦ CAUTION:${WHITB} Your Not Dwonload luatele.zip .
 ¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source TH3BOSS${CNIL} . \n
 \n\n"
 chmod +x ./ins
@@ -71,13 +71,13 @@ fi
 fi
 
 
-chmod +x ./TG  
+chmod +x ./luatele.zip  
 
 if [ "$1" == "R" ]; then
 while true; do
 sleep 1s
 sudo rm -fr ~/.telegram-cli
-./TG -s ./inc/Run.lua --bot=$TOKEN
+./luatele.zip -s ./inc/Run.lua --bot=$TOKEN
 done
 else 
 if ! screen -list | grep -q "boss"; then
